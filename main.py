@@ -1,20 +1,30 @@
-class User:
-    def __int__(self, ID, name, access_level ):
-        self.ID = ID
+class Bird():
+    def __int__(self, name, voice, color ):
         self.name = name
-        self.access_level = access_level
+        self.voice = voice
+        self.color = color
+
+    def fly(self):
+        print(f"{self.name} летает")
+
+    def eat(self):
+        print(f"{self.name} кушает")
+
+    def sing(self):
+        print(f"{self.name} поет {self.voice}")
+
+    def info(self):
+        print(f"{self.name} - имя")
+        print(f"{self.voice} - голос")
+        print(f"{self.color} - окрас")
 
 
 
+class Pigeon(Bird):
+    pass
 
+bird1 = Pigeon("Гоша", "курлык", "серый")
 
+bird1.sing()
 
-class Admin:
-    def super().super()
-
-
-    def __add_user:
-
-
-    def __remove_user:
-
+bird1.info()
