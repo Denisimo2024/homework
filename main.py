@@ -1,5 +1,5 @@
 class Bird():
-    def __int__(self, name, voice, color ):
+    def __init__(self, name, voice, color ):
         self.name = name
         self.voice = voice
         self.color = color
@@ -21,9 +21,11 @@ class Bird():
 
 
 class Pigeon(Bird):
-    pass
+    def __init__(self, name, voice, color, favorie_food):
+        super().__init__(name, voice, color)
+        self.favorite_food = favorie_food
 
-bird1 = Pigeon("Гоша", "курлык", "серый")
+bird1 = Pigeon("Гоша", "курлык", "серый", "хлебные крошки")
 
 bird1.sing()
 
