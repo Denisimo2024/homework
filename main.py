@@ -11,7 +11,7 @@ class Bird():
         print(f"{self.name} кушает")
 
     def sing(self):
-        print(f"{self.name} поет {self.voice}")
+        print(f"{self.name} поет - чирик")
 
     def info(self):
         print(f"{self.name} - имя")
@@ -25,8 +25,20 @@ class Pigeon(Bird):
         super().__init__(name, voice, color)
         self.favorite_food = favorie_food
 
+    def walk(self):
+        print(f"{self.name} гуляет")
+
+    def sing(self):
+        print(f"{self.name} поет - курлык курлык")
+
 bird1 = Pigeon("Гоша", "курлык", "серый", "хлебные крошки")
+
+
+bird2 = Bird("Маша", "чирик", "коричневый")
+
 
 bird1.sing()
 
 bird1.info()
+
+bird1.walk()
